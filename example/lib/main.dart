@@ -29,7 +29,7 @@ class _MyAppState extends State<InitialScreen> {
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     await Purchases.setDebugLogsEnabled(true);
-    await Purchases.setup("api_key");
+    await Purchases.setup("amzn_lfJNxKhsyNAJFlbFellmjrIKuEZ", useAmazon: true);
     PurchaserInfo purchaserInfo = await Purchases.getPurchaserInfo();
 
     // If the widget was removed from the tree while the asynchronous platform
@@ -98,8 +98,8 @@ class _UpsellScreenState extends State<UpsellScreen> {
       final offering = _offerings.current;
       if (offering != null) {
         final monthly = offering.monthly;
-        final lifetime = offering.lifetime;
-        if (monthly != null && lifetime != null) {
+        final weekly = offering.weekly;
+        if (monthly != null && weekly != null) {
           return Scaffold(
               appBar: AppBar(title: Text("Upsell Screen")),
               body: Center(
@@ -107,7 +107,7 @@ class _UpsellScreenState extends State<UpsellScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   _PurchaseButton(package: monthly),
-                  _PurchaseButton(package: lifetime)
+                  _PurchaseButton(package: weekly)
                 ],
               )));
         }
