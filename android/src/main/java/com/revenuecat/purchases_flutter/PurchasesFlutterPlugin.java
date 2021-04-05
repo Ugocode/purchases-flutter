@@ -9,12 +9,12 @@ import androidx.annotation.Nullable;
 import com.revenuecat.purchases.PurchaserInfo;
 import com.revenuecat.purchases.Purchases;
 import com.revenuecat.purchases.PurchasesErrorCode;
-import com.revenuecat.purchases.common.CommonKt;
-import com.revenuecat.purchases.common.ErrorContainer;
-import com.revenuecat.purchases.common.OnResult;
-import com.revenuecat.purchases.common.OnResultList;
-import com.revenuecat.purchases.common.SubscriberAttributesKt;
-import com.revenuecat.purchases.common.mappers.PurchaserInfoMapperKt;
+import com.revenuecat.purchases.hybridcommon.CommonKt;
+import com.revenuecat.purchases.hybridcommon.ErrorContainer;
+import com.revenuecat.purchases.hybridcommon.OnResult;
+import com.revenuecat.purchases.hybridcommon.OnResultList;
+import com.revenuecat.purchases.hybridcommon.SubscriberAttributesKt;
+import com.revenuecat.purchases.hybridcommon.mappers.PurchaserInfoMapperKt;
 import com.revenuecat.purchases.interfaces.UpdatedPurchaserInfoListener;
 import com.revenuecat.purchases.common.PlatformInfo;
 
