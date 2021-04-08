@@ -263,7 +263,7 @@ signedDiscountTimestamp:(nullable NSString *)discountTimestamp
 
 - (void)logInAppUserID:(NSString * _Nullable)appUserID
                 result:(FlutterResult)result {
-    [RCCommonFunctionality logIn:appUserID completionBlock:[self getResponseCompletionBlock:result]];
+    [RCCommonFunctionality logInWithAppUserID:appUserID completionBlock:[self getResponseCompletionBlock:result]];
 }
 
 - (void)identify:(NSString * _Nullable)appUserID
