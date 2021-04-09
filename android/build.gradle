@@ -42,7 +42,7 @@ dependencies {
     // implementation "com.revenuecat.purchases:purchases-hybrid-common:1.6.2"
     implementation('com.revenuecat.purchases:purchases-hybrid-common') {
         version {
-            branch = 'feature/identity_v3'
+            branch = 'develop'
         }
     }
     implementation('com.revenuecat.purchases:purchases') {
